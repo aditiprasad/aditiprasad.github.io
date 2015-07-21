@@ -1,1 +1,59 @@
-<h1>Whatever</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Tic-Tac-Toe Game</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src=https://code.jquery.com/jquery-2.1.4.js></script>
+</head>
+
+<body>
+ <h1><em><strong>The Tic-Tac-Toe Game</strong></em></h1>
+ <div class="images">
+    <div id="x" class="image">
+        <img id="imageOfX" src="http://www.meshbelt.com/X.gif" style="width: 100px; height: 100px;">
+        <input id="player1" class="player">
+    </div>
+    <divclass="image">
+        <img id="imageOfO" src="http://www.thecompliancecenter.com/img_temp/decals/numbers/dc0_lo.gif" style="width: 100px; height: 100px;">
+       <input id="player2" class="player">
+    </div>
+ </div>
+
+ <div class="board">
+    <div id="row1" class="row">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+    </div>    
+    <div id="row2" class="row">
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box box-middle"></div>
+        <div id="box6" class="box"></div>
+    </div>    
+    <div id="row3" class="row">
+        <div id="box7" class="box"></div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+    </div>        
+ </div>
+ <div id="modal-button">
+    <button id="end-game"><em>End Game</em></button>
+ </div>
+ <div id="modal">
+    <div class="modal-content">
+         <div class="modal-header">
+            <h3 id="winner"><em>TIC-TAC-TOE IS AWESOME!</em></h3>
+            <button id="close-modal">X</button>
+      </div>
+    <div class="modal-body">
+       <img src="http://vignette2.wikia.nocookie.net/justdance/images/1/1c/Post-18760-lion-king-meerkat-hula-dancing-5zsd.gif/revision/latest?cb=20150714232455">
+    </div>
+ </div>
+</div> 
+<div class="restart">
+    <button id="restart-game"><em>Restart Game</em></button>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
