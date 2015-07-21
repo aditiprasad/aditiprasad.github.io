@@ -10,15 +10,15 @@ var start = $('#start');
 
 
 imageOfX.on('click', function(){
-	input1.text;
+	player1 = input1.val();
     console.log("player1 has been chosen");
-    return input1.text;
+    return player1;
 });
 
 imageOfO.on('click', function(){
-	input2.text;
+	player2 = input2.val();
 	console.log("player2 has been chosen");
-	return input2.text;
+	return player2;
 });
 
 
@@ -46,6 +46,7 @@ $boxes.on('click', function(event){
 	    turn++;
 	}
 	 whoWins();
+	 // tie();
 })   
 
 var winningCombinations = [ 
@@ -72,13 +73,13 @@ var whoWins = function whoWins () {
     			countX++;
     			 if (countX === 3) {
     		console.log("Player 1 is the winner!");
-    		alert("Player1 wins!");
+    		alert(player1 + " " + "wins!");
     	}
     		} else if($("img", element).attr("src") === winningO[id]) {
     			countO++;
     			 if(countO === 3) {
     		console.log("Player 2 is the winner!");
-    		alert("Player 2 is the winner!");
+    		alert(player2 + " " + "wins!");
     	}
     		} 
     	})
@@ -86,7 +87,20 @@ var whoWins = function whoWins () {
  })
 };
 
-// var tie = 
+// var tie = function tie (){
+//    winningCombinations.forEach(function(element){
+// 	  countTie = 0;
+// 	if (winningCombinations !== winningX){
+// 	   console.log("it's obviously a tie")
+// 		countTie++;
+// 		alert("That's a tie!")
+//    } else if (winningCombinations !== winningO){
+// 		console.log("Tha's a tie yo");
+// 		countTie++;
+// 		alert("That's a tie yo");
+// 	}
+//  })
+// };
 
 var button = $('#modal-button');
 var datModal = $('#modal');
